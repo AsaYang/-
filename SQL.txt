@@ -1,0 +1,5 @@
+SELECT     sal_phone, COUNT(0) AS Expr1
+FROM         Sales_Chance
+GROUP BY sal_phone
+HAVING      (COUNT(0) > 1)
+ORDER BY Expr1 DESC
